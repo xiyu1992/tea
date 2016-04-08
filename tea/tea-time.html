@@ -1,0 +1,510 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- <title>下午茶大赛 - 哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title> -->
+        <title>下午茶大赛测试</title>
+        <meta name="description" content="" />
+                <meta name="keywords" content="" />
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="http://static.hdslb.com/images/favicon.ico">
+        <link rel="search" type="application/opensearchdescription+xml" href="http://static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+        
+        <link rel="stylesheet" href="http://static.hdslb.com/css/core-v5/page-core.css" type="text/css" />
+        <script type="text/javascript" src="http://static.hdslb.com/js/jquery.min.js"></script>
+        <script type="text/javascript" src="http://static.hdslb.com/js/core-v5/base.core.js"></script>
+ 
+    </head>
+
+    <body>  
+        <div class="z_top">
+            <div class="z_header">
+                <div class="z_top_nav">
+                    <ul>
+                        <li class="home">
+                            <a class="i-link" href="http://www.bilibili.com/"><span>主站</span></a>
+                        </li>
+                            <li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+                        <li class="b-gc" hasframe="true">
+                            <a class="i-link" href="http://game.bilibili.com/" title="游戏中心">游戏中心<em class="beta"></em></a>
+                            <div class="i_div game" data-frame="game"></div>
+                        </li>
+                            <li class="live"><a class="i-link" target="_blank" href="http://live.bilibili.com" title="直播">直播</a></li>
+                        <li class="b-zb"><a class="i-link" target="_blank" href="http://zb.bilibili.com" title="周边">周边</a></li>
+                        <li class="yoo" hasframe="true">
+                            <a class="i-link" target="_blank" href="http://yoo.bilibili.com/index.html" title="日本游">日本游<em class="new"></em></a>
+                            <div class="i_div travel" data-frame="travel"></div>
+                        </li>
+                    </ul>               
+                </div>
+                <div class="uns_box">
+                    <ul class="menu">
+                        <li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+                            <a class="i-link" href="http://space.bilibili.com/" target="_blank">
+                                <img class="i_face">
+                            </a>
+                            <div id="i_menu_profile" class="i_menu">
+                                <div class="i_menu_bg_t"></div>
+                                <div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+                                <div class="member-menu-wrp">
+                                    <ul class="member-menu">
+                                        <li><a href="http://member.bilibili.com/" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>用户中心</a></li>
+                                        <li><a target="_blank" href="https://account.bilibili.com/" class="account"><i class="b-icon b-icon-p-account"></i>账户中心</a></li>
+                                        <li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>我的钱包</a></li>
+                                        <li><a href="http://live.bilibili.com/i" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+                                    </ul>
+                                </div>
+                                <div class="member-bottom">
+                                    <a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+                            <a class="i-link" href="http://message.bilibili.com" target="_blank">消息</a>
+                        </li>
+                        <li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+                            <div class="num" id="dynamic_num_total"></div>
+                            <a class="i-link" href="http://www.bilibili.com/account/dynamic" target="_blank">动态</a>
+                        </li>
+                        <li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+                            <a class="i-link" href="http://space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+                        </li>
+                        <li id="i_menu_history_btn" guest="no" class="u-i">
+                            <a class="i-link" href="http://www.bilibili.com/account/history">历史</a>
+                        </li>
+                        <li id="i_menu_login_reg" guest="yes" class="u-i">
+                            <a id="i_menu_login_btn" class="i-link login" href="https://account.bilibili.com/login"><span>登录</span></a><i class="s-line"></i><a id="i_menu_register_btn" class="i-link reg" href="https://www.bilibili.com/register"><span>注册</span></a>
+                        </li>
+                        <li class="u-i b-post">
+                            <a class="i-link" href="http://member.bilibili.com/video_submit.html?tpl=upload" target="_blank">投 稿</a>
+                            <ul class="s-menu">
+                                <li><a href="http://member.bilibili.com/video_submit.html?tpl=upload" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+                                <li><a href="http://member.bilibili.com/#video_manage" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        
+<script type="text/javascript">
+    if(window.browser.version.mobile) {
+        window.location.href = "http://www.bilibili.com/html/m-tea.html";
+    }
+</script>
+<link rel="stylesheet" type="text/css" href="http://i0.hdslb.com/u_user/activities/2015tea-time/css/tea8.css">
+<!-- <link rel="stylesheet" type="text/css" href="tea8.css"> -->
+<script type="text/javascript" src="http://static.hdslb.com/js/page.arc.js"></script>
+<script type="text/javascript" src="http://i0.hdslb.com/u_user/activities/2015tea-time/js/aft-tea7.js"></script>
+<!-- <script type="text/javascript" src="http://i2.hdslb.com/u_user/activities/2015tea-time/js/mission4.js"></script> -->
+<script type="text/javascript" src="mission4.js"></script>
+<style type="text/css">
+  .tea-content{
+  width: 100%;
+  background: url(http://i2.hdslb.com/u_user/activities/2015tea-time/img/bg-pf.png) repeat;
+  padding-bottom: 30px;
+}
+</style>
+<aside id="shade-layer" class="shade-layer">
+    <div class="inner">
+        <div class="bg">
+            <div id="result" class="result-area">
+                <!-- <div class="icon"></div> -->
+                <p class="l-1">恭喜你抽中【<b class="message"></b>】</p>
+
+                <p class="l-2">兑换码【<b class="code"></b>】</p>
+
+                <p class="l-3">可在用户中心>商城>礼品兑换处进行兑换</p>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<div class="tea-box">
+    <div class="tea-top">
+        <div class="top-body">        
+            <img src="http://i2.hdslb.com/u_user/activities/2015tea-time/img/tea_02.png" alt="">
+            <img src="http://i2.hdslb.com/u_user/activities/2015tea-time/img/tea_03.png" alt="">
+        </div>
+    </div>
+    <div class="tea-content">
+        <div class="content-body">
+            <img src="http://i2.hdslb.com/u_user/activities/2015tea-time/img/tea_04.png" alt="">
+            <div class="tea-title8"></div>
+            <!-- 视频评分开始 -->
+           <div class="play-video">
+               <div class="scoreBody">
+                   <div class="scoreBlock">
+                       <div class="title_bg">
+                           <div class="select_blt">
+                               <div class='btn' value="0">硬币</div>
+                               <div class='btn' value="1">随机</div>
+                               <div class='btn' value="2">时间</div>
+                               <div class='btn' value="3">点击</div>
+                           </div>
+                       </div>
+                       <div class="score_list" id="score_list"></div>
+                       <ul class="change_button"></ul>
+                   </div>
+                </div>
+           </div>
+           <!-- 视频评分end  -->
+        </div>
+    </div>
+    <div class="tea-main">
+        <div class="main-body">
+
+            <img  class="tea-prizes" src="http://i2.hdslb.com/u_user/activities/2015tea-time/img/tea_05.png" alt="">
+            <div  class="tea-awards">
+                <div class="tea-text">
+                    <p>最佳舔屏奖：<br/>
+                        评选看起来最让人口水直流想舔屏幕的下午茶
+                    </p>
+                    <p>不明觉厉奖：<br/>
+                        评选看起来最高端大气上档次的下午茶
+                    </p>
+                    <p>
+                        目瞪口呆奖：<br/>
+                        评选搭配/配方最出人意料的下午茶
+                    </p>
+                    <P>首席炼金术师：（？）</P>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tea-footer">
+        <div class="footer-body">
+            <div class="tea-title"></div>
+            <div class="tea-raffle">
+                <!-- <button id="lottery-button" class="button"></button> -->
+            </div>
+        </div>
+        <ul class="tea-list">
+            <li class="tea-hover">
+                <div class="tea-staples">
+                    <div class="black_overlay">
+                        <p>制作步骤：</p>
+                        <p>将2个黄牌精选红茶茶包放入杯中，倒入沸水 180ml，</p>
+                        <p>泡制3分钟，上下抖动5次，将茶包取出</p>
+                        <p>往杯中倒入2~3茶匙炼乳（20ml），搅拌均匀</p>
+                        <p>往杯中倒入牛奶50ml，搅拌均匀</p>
+                        <p>即可饮用</p>
+                    </div>
+                </div>
+                <div class="tea-name">立顿下午茶食谱：港式奶茶</div>
+            </li>
+            <li class="tea-hover">
+                <div class="tea-staples tea-staples2">
+                    <div class="black_overlay">
+                        <p>制作步骤：</p>
+                        <p>将1个黄牌精选红茶茶包放入杯中，倒入沸水 180ml，</p>
+                        <p>泡制3分钟，上下抖动5次，将茶包取出</p>
+                        <p>往杯中加入浅浅3茶匙姜汁黑糖</p>
+                        <p>略加搅拌使黑糖的口味分散均匀，加入炼奶一茶勺，约5ml。</p>
+                        <p>即可品饮</p>
+                    </div>
+                </div>
+                <div class="tea-name">立顿下午茶食谱：黑糖姜汁奶茶</div> 
+            </li>
+            <li class="tea-hover" style="margin-right:0">
+                <div class="tea-staples tea-staples3">
+                    <div class="black_overlay">
+                        <p>制作步骤：</p>
+                        <p>将1个黄牌精选红茶茶包放入杯中，倒入沸水 180ml，</p>
+                        <p>泡制3分钟，上下抖动5次，将茶包取出 </p>
+                        <p>往杯中加入2块方糖（约9g），搅拌溶解</p>
+                        <p>加入青柠调制酒约50ml</p>
+                        <p>往杯中加入100ml冰块 （约10个）</p>
+                        <p>即可享用</p>
+                    </div>
+                </div>
+                <div class="tea-name">立顿下午茶食谱：青柠朗姆茶</div>
+            </li>
+        </ul>
+        <div class="tea-make">
+            <div class="tea-title2"></div>
+            <img src="http://i0.hdslb.com/u_user/activities/2015tea-time/img/tea_09-1.png" alt="">
+        </div>
+        <div class="tea-video">
+            <div class="tea-rule">
+                <div class="tea-rule-l">
+                    <div class="tea-title4"></div>
+                    <p>1.活动时间为2015年11月13日至2015年11月30日。</p>
+                    <p>2.所有参赛作品请投稿至“娱乐区——美食圈”，并加上“下午茶大赛”的tag。</p>
+                    <p>3.仅限新作品自制投稿，代投、转载、搬运均不能参加活动，过往已投稿视频亦不可删稿重投参与活动。</p>
+                    <p>4.视频封面必须是作品的真实照片。</p>
+                    <p>5.视频长度至少2分钟，UP必须在视频末尾享用作品并存活。</p>
+                    <p>6.搭配的点心需要自己手工制作，可以使用本页面上申领的限量版哔哩哔哩定制立顿茶包制作美味的下午茶茶饮哦~</p>
+                    <p class="tea-ys">7.为了各位参赛者的身体健康，禁止使用不可食用的材料和非常规食材，涉及危害人身安全的视频将不予通过。</p>
+                    <p>8.参赛不限制投稿次数，但只保留同一人多个作品中的最高名次。</p>
+                    <p>9.奖品图片为示意图，具体请以实物为准。</p>
+                    <p>10.涉及违反相关法律和政策规定的内容不予参赛。</p>
+                    <p>11.本活动最终解释权归哔哩哔哩动画所有。</p>
+                    <p style="margin-left:18px;">如有问题可联系:233@bilibili.com</p>
+                    <p style="margin-top:20px;">* 本次活动奖品由立顿赞助提供。</p>
+                </div>
+                <div class="tea-rule-r">
+                    <div class="tea-title4 tea-title5"></div>
+                    <p>视频投稿时，在投稿类型中选择自制，<span class="tea-jc">参与活动：【下午茶大赛】</span>，审核通过后，所有作品会在活动页面“参赛作品”列表中集中展示。</p>
+                    <div class="tea-title4 tea-title6"></div>
+                    <P>每位拥有账号的用户都可为自己喜欢的作品评分。</P>
+                    <P>1、评分时间为：2015年11月13日——2015年12月2日</P>
+                    <P>2、每个2015年11月1日前注册的正式会员账号都可以对单个参赛作品进行一次评分（1-5星）。</P>
+                    <img src="http://i2.hdslb.com/u_user/activities/2015tea-time/img/tea_10.png" alt="">
+                </div>
+            </div>
+            <div class="tea-title7"></div>
+        </div>
+        <div class="tea7-body">
+            <div class="tea-rank">
+                <div class="num-one" style="margin-left: 27px;">
+                    <a href="http://www.bilibili.com/video/av3211547/" target="_blank">
+                        <img src="http://i1.hdslb.com/video/72/72b7e21a6ee8e5db465d7a2907b0fa33.jpg" alt="">
+                        <div class="num-text">【喵桑】现学现卖美食制作之下午茶大赛篇</div>
+                        <span>作者：nyanya喵桑</span>
+                        <div class="num-bg">49156</div>
+                    </a>
+                </div>
+                <div class="num-one"  style="margin-right:0">
+                    <a href="http://www.bilibili.com/video/av3220169/" target="_blank">
+                        <img src="http://i0.hdslb.com/video/fa/fa15b52958ecf277d1db425334cd218a.jpg" alt="">
+                        <div class="num-text">【Z小厨】简单教程水信玄饼+香蕉班戟</div>
+                        <span>作者：Z000000E</span>
+                        <div class="num-bg num-bg2">24456</div>
+                    </a>
+                </div>
+            </div>
+            <div class="prpr06-body">
+                <ul>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3215876/" target="_blank">
+                            <img src="http://i1.hdslb.com/video/ad/adb0f434b1059ca22d8833fedebee20a.jpg" alt="">
+                            <div class="t" title="【翳起做甜点】第二十一期 ฅ抹茶磅（胖）蛋糕(′ ▽`〃)【阿翳&五月】"> 第二十一期ฅ抹茶磅（胖）蛋糕(′ ▽`〃)</div>
+                            <span>作者：阿翳www</span>
+                            <div class="num-bg bg-03">9424</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3211854/" target="_blank">
+                            <img src="http://i1.hdslb.com/video/37/379bc0326097697d5d0be71f38597014.jpg" alt="">
+                            <div class="t" title="【教你造♂人】2233娘饼干X海景碧池酸奶慕斯蛋糕">【教你造♂人】2233娘饼干X海景碧池酸奶慕斯蛋糕</div>
+                            <span>作者：笨过阿四</span>
+                            <div class="num-bg bg-04">8678</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3218968/" target="_blank">
+                            <img src="http://i2.hdslb.com/video/2b/2b43f787073461d760a92175381edb48.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】非洲少女集体吃土为哪般">【下午茶大赛】非洲少女集体吃土为哪般</div>
+                            <span>作者：北美吴彦祖MIMO</span>
+                            <div class="num-bg bg-05">8018</div>
+                        </a>
+                    </li>
+                    <li class="mr-r">
+                       <a href="http://www.bilibili.com/video/av3211738/" target="_blank">
+                            <img src="http://i1.hdslb.com/video/e5/e53c6973b4a1555265ab9ff01d17b277.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】吃掉小电视">【下午茶大赛】吃掉小电视</div>
+                            <span>作者：crystalX</span>
+                            <div class="num-bg bg-06">6282</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3248699/" target="_blank">
+                            <img src="http://i0.hdslb.com/video/e9/e9ecf0b87cadef9b4f5549f6eb2e05b0.jpg" alt="">
+                            <div class="t" title="【一个人在家饿不死】抹茶松饼+绿茶的下午茶(Matcha Pancake)">【一个人在家饿不死】抹茶松饼+绿茶的下午茶(Matcha Pancake)</div>
+                            <span>作者：Mameko豆砸</span>
+                            <div class="num-bg bg-07">5856</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3216990/" target="_blank">
+                            <img src="http://i0.hdslb.com/video/5a/5ab9c74c8661bbd923bb21d5755ba32f.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】巧克力熔岩蛋糕+柠檬红茶~眼镜娘的下午茶~">【下午茶大赛】巧克力熔岩蛋糕+柠檬红茶~眼镜娘的下午茶~</div>
+                            <span>作者：yoshushu</span>
+                            <div class="num-bg bg-08">5646</div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3211980/" target="_blank">
+                            <img src="http://i0.hdslb.com/video/ef/efde61484a458229c6a2ced31f2a878d.jpg" alt="">
+                            <div class="t" title="【作屎小天才】酸奶味薯片+可乐+黑芝麻糊+咖啡+奶粉+香蕉+葡萄干  这样的蛋糕你敢吃么">【作屎小天才】酸奶味薯片+可乐+黑芝麻糊+咖啡+奶粉+香蕉+葡萄干  这样的蛋糕你敢吃么</div>
+                            <span>作者：SoyoUltra</span>
+                            <div class="num-bg bg-09">5446</div>
+                        </a>
+                    </li>
+                    <li class="mr-r">
+                       <a href="http://www.bilibili.com/video/av3212159/" target="_blank">
+                            <img src="http://i0.hdslb.com/video/14/1463442a91cf2c1e6f60197696e76c69.jpg" alt="">
+                            <div class="t" title="【姬友合作ver】吃土奶茶+非洲小电视培根松饼（带你脱非入欧不是梦！">【姬友合作ver】吃土奶茶+非洲小电视培根松饼（带你脱非入欧不是梦！</div>
+                            <span>作者：奶油子OvO</span>
+                            <div class="num-bg bg-10">3360</div>
+                        </a>
+                    </li>
+                    <li >
+                       <a href="http://www.bilibili.com/video/av3280941/" target="_blank">
+                            <img src="http://i1.hdslb.com/video/39/39615d371a71874130a94437f60bd913.jpg" alt="">
+                            <div class="t" title="[下午茶大赛]冬季限定的法式草莓挞">[下午茶大赛]冬季限定的法式草莓挞</div>
+                            <span>作者：藤冈菌</span>
+                            <div class="num-bg bg-11"></div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3243769/" target="_blank">
+                            <img src="http://i0.hdslb.com/video/92/926b4a0516c8268735caf51375d2099e.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】秋末茶话会">【下午茶大赛】秋末茶话会</div>
+                            <span>作者：是谁允许你比我帅的</span>
+                            <div class="num-bg bg-12"></div>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="http://www.bilibili.com/video/av3233667/" target="_blank">
+                            <img src="http://i1.hdslb.com/video/7b/7bf52da47df5eebe9cf64a92d7ec38e5.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】快来参加小玲的茶会吧~（轨迹下午茶）">【下午茶大赛】快来参加小玲的茶会吧~（轨迹下午茶）</div>
+                            <span>作者：蚀月猫</span>
+                            <div class="num-bg bg-13"></div>
+                        </a>
+                    </li>
+                    <li class="mr-r">
+                       <a href="http://www.bilibili.com/video/av3249417/" target="_blank">
+                            <img src="http://i2.hdslb.com/video/ad/adc6a5bb7093711ada1af2e9e43aeaf3.jpg" alt="">
+                            <div class="t" title="【下午茶大赛】吃掉一只南小鸟!巧克力包~">【下午茶大赛】吃掉一只南小鸟!巧克力包~</div>
+                            <span>作者：呆深自然萌</span>
+                            <div class="num-bg bg-14"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+         <!-- 主站分享开始 -->
+        <div class="arc-tool-bar">
+            <div class="block share"><span class="t">分享</span>
+                <div class="share-list" id="share_list">
+                    <div class="share-btn" id="btn_weibo" title="分享到微博"></div>
+                    <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信"></div>
+                    <div class="share-btn" id="btn_qqzone" title="分享到QQ空间"></div>
+                    <div class="share-btn" id="btn_baidu" title="分享到贴吧"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-header">评论列表</div>
+        <div class="box-body">
+            <div class="comment-container">
+                <!--评论-->
+                <div class="common">
+                    <div class="comm">
+                         <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(3103646, 1);" style="cursor:pointer"></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+<div class="footer">
+    <div class="footer-wrp">
+        <div class="footer-cnt clearfix">
+            <ul class="boston-postcards">
+                <li>
+                    <div class="tips">Bilibili</div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/aboutUs.html">关于我们</a></div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/friends-links.html">友情链接</a></div>
+                    <a target="_blank" href="http://bilibili2233.taobao.com/"><div class="cards taobao"><em></em></div></a>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/contact.html">联系我们</a></div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/join.html">加入我们</a></div>
+                </li>
+                <li>
+                    <div class="tips">帮助</div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/help.html">帮助中心</a></div>
+                    <div class="cards wide"><a target="_blank" href="http://www.bilibili.com/html/userdel_list.html">补档认领处</a></div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/copyright.html">侵权申诉</a></div>
+                    <div class="cards longer"><a target="_blank" href="http://bbs.biligame.com/forum.php?mod=forumdisplay&fid=44">建议/BUG汇报</a></div>
+                </li>
+                <li>
+                    <div class="tips">传送门</div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/video/av120040/">高级弹幕</a></div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/html/cele.html">名人堂</a></div>
+                    <div class="cards"><a target="_blank" href="http://www.bilibili.com/event">活动专题页</a></div>
+                    <div class="cards"><a target="_blank" href="http://comic.qq.com/news/">资讯</a></div>
+                    <div class="cards"><a target="_blank" href="http://h.bilibili.com/wallpaper?action=list">壁纸站</a></div>
+                    <div class="cards"><a target="_blank" href="https://account.bilibili.com/answer/addq">分院帽计划</a></div>
+                    <div class="cards"><a target="_blank" href="http://activity.bilibili.com/">活动中心</a></div>
+                </li>
+            </ul><div class="partner">
+                <div class="block left">
+                    <div class="partner-banner"></div>
+                </div>
+                <div class="block left" style="margin: 0 0 0 10px;">
+                    <p>广播电视节目制作经营许可证：<span>（沪）字第1248号 </span></p>
+                    <p>网络文化经营许可证：<span>沪网文[2013]0480-056号</span></p>
+                    <p>信息网络传播视听节目许可证：<span>0910417</span></p>
+                    <p><a href="http://www.shjbzx.cn" target="_blank"><i class="icons-footer icons-footer-report"></i><span>上海互联网举报中心</span></a></p>
+                </div>
+                <div class="block left" style="margin: 0 0 0 10px;">
+                    <p>互联网ICP备案：<span>沪ICP备13002172号-3</span></p>
+                    <p>沪ICP证：<span>沪B2-20100043</span></p>
+                    <p>违法不良信息举报邮箱：<span>help@bilibili.com</span></p>
+                    <p>违法不良信息举报电话：<span>4000233233 转 3</span></p>
+                </div>
+            </div>
+            <div class="block right">
+                <a target="_blank" href="http://app.bilibili.com/">
+                    <div class="phone">
+                        <div class="pic"></div>
+                        <em>手机端下载</em>
+                        <div class="qrcode-box-wrp">
+                            <div class="qrcode-box qrcode-app">
+                                <div class="qrcode-box-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="http://weibo.com/bilibiliweb">
+                    <div class="weibo">
+                        <div class="pic"></div>
+                        <em>新浪微博</em>
+                        <div class="qrcode-box-wrp">
+                            <div class="qrcode-box qrcode-weibo">
+                                <div class="qrcode-box-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a id="weixin">
+                    <div class="weixin">
+                        <div class="pic"></div>
+                        <em>官方微信</em>
+                        <div class="qrcode-box-wrp">
+                            <div class="qrcode-box qrcode-weixin">
+                                <div class="qrcode-box-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>  
+        
+        <script type="text/javascript">loadLoginStatus();</script>
+        <div style="display:none;">
+        <script type="text/javascript">
+        $(function(){
+            $.ajax({ url: 'http://data.bilibili.com/rec.js',cache: true,dataType:'script'});
+            $('<scr'+'ipt type="text/javascript" src="http://static.hdslb.com/js/bfd.js" charset="UTF-8"></scri'+'pt>').appendTo('body');   
+            $('<scr'+'ipt type="text/javascript" src="http://s11.cnzz.com/stat.php?id=2724999&web_id=2724999" charset="UTF-8"></scri'+'pt>').appendTo('body');  
+            $('<scr'+'ipt type="text/javascript" src="http://tajs.qq.com/stats?sId=9156259" charset="UTF-8"></scri'+'pt>').appendTo('body');    
+        });
+        </script>
+        </div>
+        
+        
+    </body>
+</html>

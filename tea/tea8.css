@@ -1,0 +1,955 @@
+html,body{ margin:0; padding:0; font-size:12px;font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif; min-width: 1200px; }
+input,button,select,textarea{ outline:none;}
+textarea{resize: none;}
+h1,h2,h3,h4,h5,h6,ul,li,p,span{ margin:0; padding:0; list-style-type:none;}
+img{ border:none;}
+a{ outline:none; text-decoration:none;cursor: pointer; color:#00A1D6;}
+a img{ border:none;}
+address, caption, cite, code, dfn, em, i, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+body{width:100%;
+    height: 100%;
+}
+
+.arc-tool-bar {
+  width: 980px;
+  margin: 40px auto 0;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+
+.box-header {
+  width: 970px;
+  height: 30px;
+  line-height: 35px;
+  font-weight: 900;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.box-body {
+  width: 980px;
+  padding: 0px 4px;
+  margin: 0px auto;
+  color:#222;
+}
+.common ul li .content {
+  color:#222;
+}
+.common .ipt-txt {
+  width: 865px;
+}
+
+
+/* 总样式 */
+.tea-box{
+  width: 100%;
+  background:#F8B84A; 
+}
+.tea-top{
+  height: 900px;
+  background:#F8B84A url(../img/tea_01.jpg) top center no-repeat;
+}
+.top-body{
+  width: 860px;
+  margin:0 auto;
+}
+.top-body img{
+  margin:0 auto;
+}
+.tea-main{
+  width:100%;
+  height:600px;
+  background: #FEF8E5;
+}
+.main-body{
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 62px;
+  position: relative;
+}
+.tea-prizes{
+  position: absolute;
+  left: 0;
+  bottom: -689px;
+}
+.tea-awards{
+  position: absolute;
+  right: 0;
+  bottom:-674px;
+  width: 410px;
+  height: 415px;
+  background: url(../img/tea_06.png);
+  padding: 270px 0 0 180px;
+}
+.tea-text{
+  width: 328px;
+  height: 222px;
+  color:#bc5f42;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Microsoft YaHei";
+  font-weight: bold;
+}
+.tea-text p{
+  margin-bottom: 18px;
+}
+.main-body img{
+  display:block;
+  margin: 0 auto;
+}
+.tea-footer{
+  width: 100%;
+  background:url(../img/bg-pf.png) repeat;
+  padding-top: 217px;
+  padding-bottom: 130px;
+}
+.tea-title{
+  width: 226px;
+  height: 43px;
+  background: url(../img/cut.png) 0 -60px no-repeat;
+}
+.footer-body{
+  width: 980px;
+  margin:0 auto;
+}
+.tea-raffle{
+  width: 980px;
+  height: 330px;
+  background: url(../img/tea_07_fin.png) no-repeat;
+  padding-top: 120px;
+  padding-left: 30px;                                                                       
+
+}
+.tea-raffle .button{
+  width: 322px;
+  height: 109px;
+  display:block;
+  background: url(../img/cut.png) -486px -26px no-repeat;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.tea-raffle .button:hover{
+  background-position: -486px -186px
+}
+.tea-list{
+  width: 968px;
+  height:168px;
+  background: url(../img/tea_08.png) no-repeat; 
+  margin: 0 auto;
+  padding:8px 8px 8px 10px;
+}
+.tea-list li{
+  width: 316px;
+  height: 164px;
+  margin-right: 8px;
+  float: left;
+  position: relative;
+}
+.tea-list li:nth-child(1){
+  background: url(../img/lipton1.jpg) no-repeat;
+}
+.tea-list li:nth-child(2){
+  background: url(../img/lipton2.jpg) no-repeat;
+}
+.tea-list li:nth-child(3){
+  background: url(../img/lipton3.jpg) no-repeat;
+}
+.tea-name{
+  width: 306px;
+  height: 30px;
+  background: rgba(0,0,0,0.4);
+  filter: alpha(opacity=40); 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  color:#fff;
+  line-height: 30px;
+}
+.tea-staples{
+  display: none;
+  width: 316px;
+  height: 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  background: url(../img/lipton1_hover.jpg) no-repeat;
+}
+.tea-list .tea-staples2{
+   background: url(../img/lipton2_hover.jpg) no-repeat;
+}
+.tea-list .tea-staples3{
+   background: url(../img/lipton3_hover.jpg) no-repeat;
+}
+.black_overlay{
+  width: 292px;
+  height: 137px;
+  background: rgba(0,0,0,0.4);
+  filter: alpha(opacity=40); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:14px 12px;
+  color:#fff;
+  line-height: 20px;
+  z-index: 23;
+}
+.tea-make{
+  width: 986px;
+  margin:0 auto;
+}
+.tea-title2{
+  width: 380px;
+  height: 43px;
+  background: url(../img/cut.png) 0 -109px no-repeat;
+  margin:80px 0 30px 10px;
+}
+.tea-video{
+  width: 980px;
+  margin:0 auto;
+}
+.tea-title3{
+  width: 230px;
+  height: 43px;
+  background: url(../img/cut.png) 0 -155px no-repeat;
+  margin:80px 0 30px 10px;
+}
+.tea-rule{
+  overflow: hidden;
+  margin-top: 100px;
+  color:#98531c;
+  font-size: 14px;
+  line-height: 24px;
+}
+.tea-rule .tea-rule-l{
+  width: 430px;
+  float: left;
+}
+.tea-rule .tea-rule-r{
+  float: right;
+  width: 360px;
+}
+.tea-title4{
+  width: 141px;
+  height: 43px;
+  background: url(../img/cut.png) 0 -203px no-repeat;
+  margin-bottom:20px;
+  margin-left: 10px;
+} 
+.tea-title5{
+  background-position: 0 -252px;
+}
+.tea-title6{
+  background-position: 0 -297px;
+  margin-top: 60px;
+}
+.tea-ys{
+  color:#e62f2f;
+}
+.tea-jc{
+  color:#e62f2f;
+  font-weight: bold;
+}
+.ft-img{
+  display: block;
+  margin:0px auto;
+}
+.tea-title7{
+  width: 152px;
+  height: 43px;
+  background: url(../img/cut.png) 0 -348px no-repeat;
+  margin:30px 0 80px 0;
+}
+
+/* 抽奖弹窗 */
+ .shade-layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: 10001;
+}
+
+.shade-layer::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.shade-layer .inner {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+/* .shade-layer .bg {
+    position: relative;
+    width: 640px;
+    height: 540px;
+    background: transparent url("http://i2.hdslb.com/u_user/activities/meizu-live/img/bg4.png") no-repeat center;
+    background-size: cover;
+} */
+
+.result-area {
+    display: inline-block;
+    margin-top: 130px;
+    padding: 16px;
+    color: #fff;
+    text-align: left;
+    background-color: rgba(220, 98, 34, .5);
+}
+
+/* .result-area .icon {
+    width: 248px;
+    height: 138px;
+} */
+
+.result-area .l-1 {
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.result-area .l-1 .message {
+    font-size: 16px;
+}
+
+.result-area .l-2,
+.result-area .l-3 {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.tea-title8 {
+    width: 229px;
+    height: 41px;
+    background: url(../img/cut.png) 0 -158px no-repeat;
+    margin: 60px 0 0px 24px;
+}
+.tea-content{
+  width: 100%;
+  background: url(../img/bg.png) repeat;
+  padding-bottom: 30px;
+}
+.content-body {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 62px;
+}
+.content-body img{
+  display: block;
+  margin:0 auto;
+}
+/* 视频样式加入 */
+.play-video {
+  margin-top: -36px;
+  height: 820px;
+}
+.cad_weibo{
+        overflow: hidden;width:980px; height:960px; background:url(http://i0.hdslb.com/u_user/a5857a43cf931f439e1b1f272b63a274.png) no-repeat 0 0; margin:40px 0 0 0;
+    }
+.w-l{margin: 37px 8px 8px 8px;
+        width: 468px;
+        height: 400px;
+        float:left;}
+.w-r{margin: 37px 8px 8px 8px;
+        width: 468px;
+        height: 400px;
+        float:right;}
+.max_pl_box .large{
+        margin: 30px 0 0 0;
+        width: 974px;
+    }
+.max_pl_box .z-l{ width:967px;}
+.max_pl_box .z-l .comm_bg{ height:27px;}
+.max_pl_box .z-l .t,.max_pl_box .z-l .content,.max_pl_box .z-l .elinfo{ width:879px;}
+.change_button {
+    display: block;
+    float: right;
+    height: 30px;
+    text-align: center;
+    padding-top: 35px;
+}
+.change_button li{
+    float: left;
+    width: 24px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border: 1px solid #ffb142;
+    color: #e57d18;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.change_button li.no{
+    background: #ffef87;
+    border: 1px solid #ffb142;
+}
+.change_button li a{
+    display: block;
+    width: 24px;
+    height: 26px;
+    color: #e57d18;
+}
+.change_button li.pree{
+    background: #ffef87;
+}
+.change_button li.pree a{
+    color: #e57d18;
+}
+.change_button .wide{
+    width: 68px;
+}
+.mad_video_list {
+    padding: 5px 0px;
+    position: absolute;
+    text-align: center;
+    top: 689px;
+    left: 44px;
+    width: 990px;
+    padding-left: 44px;
+}
+input[type=text]{
+    display: none;
+}
+.h2{ font-size:24px; margin: 0 0 10px 0;border-bottom: 5px solid #EEE; padding-bottom:5px;position:relative;}
+
+.tp_zp{    
+    width: 180px;
+    height: 205px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.tp_zp img{height: 100px; width:160px; margin: 14px 10px;}
+.tp_zp .zp_i{ position:absolute; top:25px; left:13px;-webkit-text-size-adjust: none; color:#222; font-size:12px; font-family:微软雅黑;}
+.tp_zp .zp_i b{ color:#F66; font-weight:normal; margin:0 1px 0 1px;}
+.tp_zp .zp_i i{ color:#222; font-family:Tahoma, Geneva, sans-serif; margin-right:5px;font-size: 14px}
+.tp_zp .t{     
+    position: absolute;
+    color: #999;
+    bottom: 40px;
+    /* left: 13px; */
+    text-align: left;
+    font-size: 12px;
+    width: 168px;
+    height: 36px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin: 0px 6px; */
+    padding: 0px 6px;
+    /* opacity: 0; */
+/* transition: .3s all linear; */}
+/* .tp_zp:hover .t{opacity: 0.8;} */
+.tp_zp .pf{float:right; margin-right:9px; width:46px; height:22px;border-radius: 2px; margin-top:40px;border: 1px solid #DEE1E1; font-size: 12px;}
+.tp_zp .r { display: block; position: absolute; bottom: 16px; right: 15px; color: #1184b4;}
+.tp_zp .fs{ position: absolute;padding: 4px; background: #F25D81;color: white;line-height: 100%;-webkit-text-size-adjust: none;font-size: 10px;z-index: 5;font-family: 微软雅黑,Arial;border-radius: 4px; right: 20px; top: 105px;cursor: pointer;}
+.tp_zp .pf .bra{ margin: 3px 0 0 5px;height: 15px;width: 34px;float: left;display: none}.tp_zp .pf .bra input{ line-height:11px; padding:0; background:none;border: none;height: 14px; font-size:11px;-webkit-text-size-adjust: none; color:#888; display:block; width:33px; text-align:center;}.tp_zp .pf .bra input:hover{ background:#fff;}.pf_sminfo{ padding:5px; line-height:150%;}.pf_sminfo b{ color:#F36;}
+.tp_zp .pf a{
+    float: left;
+    height: 22px;
+    width: 46px;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    color:#424242;
+}
+.h2 .u{ position:absolute; right:10px; top:13px; font-size:12px; color:#999;}.h2 .u b{ font-weight:normal; color:#F33;}.h2 .u i{ color:#555}
+.all_button {
+    background: #fc940d;
+    border-radius: 7px;
+    position: absolute;
+    top: 620px;
+    left: 814px;
+    width: 108px;
+    height: 35px;
+    color: #333;
+    font-size: 16px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: bold;
+}
+li {
+    list-style-type:none;
+}
+.all_button:hover {
+    color: #fff;
+}
+.mainBody{
+    width: 100%;
+    height: auto;
+}
+.mainTop{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+.topBg{
+    position: relative;
+    background: url("http://i0.hdslb.com/u_user/activities/technology_model2015_01_04/images/banner.png") no-repeat;
+    width: 1100px;
+    height: 870px;
+    margin-left: -65px;
+}
+.topLogo{
+    height: 784px;
+    width: 394px;
+    background: url("http://i1.hdslb.com/u_user/activities/technology_model2015_01_04/images/shimakaze2233.png");
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: -95px;
+}
+.mainNav{
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 2px #ffffff;
+    border-top: solid 2px #ffffff;
+    background-color: #4e4761;
+}
+.mainNav .Nav{
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+}
+.navBlock{
+    position: relative;
+    width: 245px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+    font-family:"SimHei" ;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.3s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.1s;
+    cursor: pointer;
+}
+.navBlock:hover{
+    background-color:#23183A;
+    text-shadow: 1px 1px 3px #e3edf4;
+}
+.main{
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.activityDescription{
+    position: relative;
+    width: 925px;
+    height: 289px;
+    margin: 90px auto 0;
+    background: url("http://i2.hdslb.com/u_user/activities/technology_model2015_01_04/images/activityDescription.png") no-repeat;
+}
+.adText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "SimHei";
+    line-height: 28px;
+    left: 30px;
+    top: 80px;
+}
+.vedioList{
+    position: relative;
+    width: 980px;
+    height: 1396px;
+    margin: 40px auto 0;
+    background: url("http://i2.hdslb.com/u_user/activities/technology_model2015_01_04/images/vedioBg.png") no-repeat;
+}
+.listBlock{
+    position: absolute;
+    width: 960px;
+    height: 360px;
+    left: 10px;
+}
+.vedioBlock{
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 175px;
+    margin: 0px 5px 5px 5px;
+}
+.vedioBlock img {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.vedioTitle{
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "simhei";
+    transition: 0.2s all;
+}
+.vedioBlock:hover .vedioTitle{
+    color: #FF94D3;
+}
+.playButton{
+    background: url("http://i1.hdslb.com/u_user/activities/technology_model2015_01_04/images/play.png")no-repeat;
+    width: 230px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.vedioBlock:hover  .playButton{
+    opacity: 1;
+}
+.mainBg{
+    width: 100%;
+    height: 2135px;
+    background: url("http://i0.hdslb.com/u_user/activities/technology_model2015_01_04/images/Vbg.png") no-repeat;
+    position: absolute;
+}
+.moreTitle{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "simhei";
+    top: 1380px;
+    right: 125px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.moreTitle:hover{
+    color:#FF94D3;
+}
+.vedioScore{
+    width: 980px;
+    height: auto;
+    position: relative;
+    margin: 100px auto 40px;
+}
+.scoreTitle{
+    background: url("http://i1.hdslb.com/u_user/activities/technology_model2015_01_04/images/scoretitle.png") no-repeat;
+    width: 182px;
+    height: 51px;
+    position: relative;
+    margin: 0 auto 40px;
+}
+.scoreBody{
+    position: relative;
+    width: 980px;
+    height: auto;
+}
+.scoreNav{
+    position: relative;
+    width: 980px;
+    height: 42px;
+    z-index: 10;
+}
+.scoreNav .navblock{
+    position: absolute;
+    height: 26px;
+    width: 190px;
+    border: solid 1px #ffffff;
+    text-align: center;
+    font-family: "simhei";
+    color: #ffffff;
+    bottom: 0px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.scoreNav .select{
+    height: 32px;
+    background-color: #4e4761;
+    font-size: 16px;
+    line-height: 32px;
+    border-bottom: solid 1px #4e4761;
+}
+.scoreBlock{
+    position: relative;
+    width: 950px;
+    margin-top:-1px ;
+    margin-left: 15px;
+    z-index: 5;
+    overflow: hidden;
+}
+.scoreNav .navblock:hover{
+    color:#FF94D3;
+}
+.score_list{
+    clear:both;
+    text-align:center;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    height: 706px;
+    margin-left: 0px;
+    font-size: 36px;
+    color:#fff; 
+}
+.score_wrapper{
+    height:3120px;
+    zoom:1;
+}
+.score_wrapper:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear:both;
+    font-size:0px;
+}
+.score_list ul{
+    float:left;
+    padding: 0 0px;
+    width:960px;
+}
+.score_list ul.block{
+    display: block;
+}
+.score_list ul li.listnav{
+    width: 960px;
+    height: 680px;
+    line-height: 40px;
+    text-align: left;
+    position: relative;
+}
+.modelBlock{
+    float: left;
+    width: 160px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+}
+.modelImg{
+    position: relative;
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+.modelImg img{
+    width: 100%;
+}
+.navTag{
+    width: 135px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("http://i0.hdslb.com/u_user/activities/technology_model2015_01_04/images/ture.png")no-repeat 0 0;
+}
+
+.mImg{
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    left: 19px;
+    top: 0px;
+    background-color: #f1f1f1;
+    text-align: center;
+    overflow: hidden;
+}
+.score_wrapper {
+    float: left;
+    margin: 0 0px 0 0px;
+    height: 20px;
+    position: relative;
+    width: 110px;
+    padding-top:45px;
+    margin-left: 10px;
+}
+.score_wrapper a {
+    display: block;
+    float: left;
+    cursor: pointer;
+    width: 16px;
+    height: 14px;
+    background: url(http://i1.hdslb.com/u_user/activities/2015tea-time/img/star.png) no-repeat -41px 0px;
+    border: none;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+.select_blt{
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 4px;
+}
+.select_blt .btn{
+  position: relative;
+  background:#fff;
+  width: 56px;
+  height: 28px;
+  float: left;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  border: 1px solid #ffb142;
+  color: #e57d18;
+}
+.select_blt .btn.on{
+    background: #ffef87;
+    border: 1px solid #ffb142;
+}
+.score_wrapper a.on{
+    background: url(http://i1.hdslb.com/u_user/activities/2015tea-time/img/star.png) no-repeat -21px 0px;
+}
+.score_wrapper a.active{
+    
+    background: url(http://i1.hdslb.com/u_user/activities/2015tea-time/img/star.png) no-repeat 0 0;
+}
+.title_bg{
+    position: relative;
+    width:960px;
+    height: 38px;
+}
+
+
+.tea-rank{
+  width: 482px;
+  margin:55px auto;
+  overflow: hidden;
+}
+.num-one{
+  width: 160px;
+  height: 185px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  padding:14px 10px; 
+  float: left;
+  margin-right: 68px;
+}
+.num-one a{color: #748c96; }
+.num-one img{
+  height: 100px;
+  width: 160px;
+}
+.num-one .num-text{
+  height: 44px;
+  line-height: 22px
+}
+.num-one span{
+  color:#bababa;
+}
+.num-bg{
+  width: 230px;
+  height: 37px;
+  background:url(../img/tea_awards_image.png) -51px -83px no-repeat;
+  position: absolute;
+  left: -25px;
+  bottom:-1px;
+  font-size: 14px;
+  color:#fff47d; 
+  line-height:42px;
+  padding-left: 120px;
+}
+.num-one .num-bg2{
+  background-position: -51px -131px;
+}
+.prpr06-body{
+  width: 1060px;
+  margin:0 auto;
+  padding:0 10px;
+}
+.prpr06-body ul{
+  overflow: hidden;
+}
+.prpr06-body ul li{
+  width: 160px;
+  height: 185px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  padding:14px 10px;
+  float: left;
+  margin:0px 68px 50px 28px;
+}
+.prpr06-body ul li img{
+  height: 100px;
+  width: 160px;
+}
+.prpr06-body ul li .t{
+  height:44px;
+  line-height: 20px;
+  color: #748c96;
+  overflow: hidden;
+}
+.prpr06-body ul li span{
+  color:#bababa;
+}
+
+.bg-03{
+  background-position:-51px -179px; 
+}
+.bg-04{
+  background-position:-51px -227px; 
+}
+.bg-05{
+  background-position:-51px -275px; 
+}
+.bg-06{
+  background-position:-51px -323px; 
+}
+.bg-07{
+  background-position:-51px -371px; 
+}
+.bg-08{
+  background-position:-51px -419px; 
+}
+.bg-09{
+  background-position:-51px -467px; 
+}
+.bg-10{
+  background-position:-51px -515px; 
+}
+
+
+.bg-11{
+  background-position:-51px -563px; 
+}
+.bg-12{
+  background-position:-51px -611px; 
+}
+.bg-13{
+  background-position:-51px -659px; 
+}
+.bg-14{
+  background-position:-51px -707px; 
+}
+.prpr06-body ul li.mr-r{
+  margin-right: 0;
+}
